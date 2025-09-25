@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date Invite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e6f7ff;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #1a4d7a;
+    }
+    .invite {
+      background: #ffffffc9;
+      padding: 30px;
+      border-radius: 15px;
+      display: inline-block;
+      max-width: 500px;
+    }
+    h2 {
+      font-family: 'Pacifico', cursive;
+      color: #00509e;
+    }
+    button {
+      margin: 10px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Quicksand', sans-serif;
+    }
+    .yes {
+      background: #5aa9db;
+      color: white;
+    }
+    .no {
+      background: #ccc;
+      color: black;
+    }
+    button:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  </style>
+  <script>
+    function reply(answer) {
+      if(answer === 'yes') {
+        window.location.href = 'page5.html';
+      } else {
+        alert('Aww 😢 I hope you’ll change your mind 💙');
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="invite">
+    <h2>💌 Will you go on a birthday date with me? 💌</h2>
+    <button class="yes" onclick="reply('yes')">Yes 💙</button>
+    <button class="no" onclick="reply('no')">No 😢</button>
+  </div>
+</body>
+</html>
+
